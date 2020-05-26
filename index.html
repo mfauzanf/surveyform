@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    
+  </head>
+  <body>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="index.css" />
+    <title>Citizenship Survey Form</title>
+
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">American Citizenship Registration</h1>
+        <p id="description" class="description text-center">
+          Thank you for registering your citizenship
+        </p>
+      </header>
+
+      <form id="survey-form" class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label class="text" for="name">First Name</label>
+            <input type="text" class="form-control col-xs-4" id="name"  placeholder="Enter your first name" required/>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label class="text" for="name">Last Name</label>
+            <input type="text" class="form-control col-xs-4"  placeholder="Enter your last name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="birthday" class="text">Birthday</label>
+          <input
+            class="form-control"
+            type="date"
+            id="birthday"
+            name="birthday"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="text">E-mail</label>
+            <input
+              class="form-control  "
+              type="email"
+              id="email"
+              name="birthday"
+              placeholder="Enter your e-mail"
+              required
+            />
+          </div>
+        
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="zip" class="text">Zip Code</label>
+            <input type="text" id="zip" class="form-control col-xs-4""
+            name="birthday" />
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="job" class="text">Job</label>
+            <input type="text" id="job" class="form-control col-xs-4""
+            name="birthday" />
+          </div>
+        </div>
+        <div class="form-group text">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+      </form>
+
+     
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
