@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <title>Citizenship Survey Form</title>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -9,21 +10,21 @@
     />
 
     <!-- Bootstrap CSS -->
-    
   </head>
   <body>
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="index.css" />
-    <title>Citizenship Survey Form</title>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
 
     <div class="container">
       <header class="header">
-        <h1 id="title" class="text-center">American Citizenship Registration</h1>
+        <h1 id="title" class="text-center">
+          American Citizenship Registration
+        </h1>
         <p id="description" class="description text-center">
           Thank you for registering your citizenship
         </p>
@@ -32,61 +33,179 @@
       <form id="survey-form" class="form-group">
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label class="text" for="name">First Name</label>
-            <input type="text" class="form-control col-xs-4" id="name"  placeholder="Enter your first name" required/>
+            <label class="text" id="name-label" for="name">First Name</label>
+            <input
+              type="text"
+              class="form-control col-xs-4"
+              id="name"
+              placeholder="Enter your first name"
+              required
+            />
           </div>
 
           <div class="form-group col-md-6">
             <label class="text" for="name">Last Name</label>
-            <input type="text" class="form-control col-xs-4"  placeholder="Enter your last name" required />
+            <input
+              type="text"
+              class="form-control col-xs-4"
+              placeholder="Enter your last name"
+              required
+            />
           </div>
         </div>
 
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="birthday" class="text">Birthday</label>
+            <input
+              class="form-control"
+              type="date"
+              id="birthday"
+              name="birthday"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6 text">
+            <label id="number-label" for="number">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+        </div>
+
+        <div class="form-group text">
+          <p>What is your gender?</p>
+          <label>
+            <input
+              name="input-gender"
+              value="male"
+              type="radio"
+              class="input-radio"
+            />Male</label
+          >
+          <label>
+            <input
+            name="input-gender"
+              value="female"
+              type="radio"
+              class="input-radio"
+            />Female</label
+          >
+          </label>
+        </div>
+
         <div class="form-group">
-          <label for="birthday" class="text">Birthday</label>
+          <label for="email" id="email-label" class="text">E-mail</label>
           <input
             class="form-control"
-            type="date"
-            id="birthday"
+            type="email"
+            id="email"
             name="birthday"
+            placeholder="Enter your e-mail"
             required
           />
         </div>
 
-        <div class="form-group">
-            <label for="email" class="text">E-mail</label>
-            <input
-              class="form-control  "
-              type="email"
-              id="email"
-              name="birthday"
-              placeholder="Enter your e-mail"
-              required
-            />
-          </div>
-        
-
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="zip" class="text">Zip Code</label>
-            <input type="text" id="zip" class="form-control col-xs-4""
-            name="birthday" />
+            <label for="job" class="text">Job</label>
+            <input
+              type="text"
+              id="job"
+              class="form-control col-xs-4"
+              name="birthday"
+              placeholder="Enter your job"
+            />
           </div>
 
           <div class="form-group col-md-6">
-            <label for="job" class="text">Job</label>
-            <input type="text" id="job" class="form-control col-xs-4""
-            name="birthday" />
+            <label for="industry" class="text">Industry</label>
+            <select
+              id="dropdown"
+              name="role"
+              class="form-control col-xs-4"
+              required
+            >
+              <option disabled selected value>Select current role</option>
+              <option value="tech">Technology & Science</option>
+              <option value="health">Medic & Pharmacy</option>
+              <option value="social">Social & Humanity</option>
+              <option value="other">Other</option>
+            </select>
           </div>
         </div>
-        <div class="form-group text">
-            <button type="submit" id="submit" class="submit-button">
-              Submit
-            </button>
-          </div>
-      </form>
 
-     
+        <div class="form-group text">
+          <p>What is your political view?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select political view</option>
+            <option value="republic">Republic</option>
+            <option value="democratic">Democratic</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group text">
+          <p>
+            What is your current transporation
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Car"
+              type="checkbox"
+              class="input-checkbox"
+            />Car</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Motorcycle"
+              type="checkbox"
+              class="input-checkbox"
+            />Motorcycle</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Mass Transportation"
+              type="checkbox"
+              class="input-checkbox"
+            />Mass Transportation</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Airplane"
+              type="checkbox"
+              class="input-checkbox"
+            />Airplane</label
+          >
+        </div>
+
+        <div class="form-group text">
+          <p>Hopes for being American Citizen</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your hopes here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group text">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
     </div>
 
     <!-- Optional JavaScript -->
